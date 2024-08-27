@@ -1,0 +1,249 @@
+/* Root */
+:root {
+	/* Colors */
+	--color-1: #ffffff;
+	--color-2: #000000;
+	--color-3: #727272;
+	--color-error: #a34343;
+	/* Backgrounds */
+	--color-background: #f1f0ec;
+	--color-background-review: #ffffff;
+	--color-background-footer: #ba9572;
+
+	/* Border */
+	--color-border: #74615c;
+
+	/* Buttons */
+	--color-button: #f1f0ec;
+	--color-button-fixed: #ba9572;
+	--color-button-footer: #ba9572;
+	--color-button-hover: #74615c;
+
+	/* Dividers */
+	--color-divider-main: #ffffff;
+	--color-divider-content: #74615c;
+
+	/* Fonts */
+	--font-taviraj: 'Taviraj', sans-serif;
+	--font-muli: 'Muli', sans-serif;
+	--font-khula: 'Khula', sans-serif;
+
+	/* Size */
+	--size-h1: 64px;
+	--size-h2: 42px;
+	--size-h3: 28px;
+	--size-text: 20px;
+	--size-footer: 16px;
+	--size-caption: 12px;
+
+	--lh-h1: 96px;
+	--lh-h2: 63px;
+	--lh-h3: 42px;
+	--lh-p: 30px;
+	--lh-footer: 24px;
+	--lh-caption: 18px;
+
+	/* Section */
+	--vertical-section-padding: 40px;
+}
+
+/* General styles */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	position: relative;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--color-background);
+}
+
+h1 {
+	font-family: var(--font-taviraj);
+	font-size: var(--size-h1);
+	font-weight: 300;
+	line-height: var(--lh-h1);
+}
+
+h2 {
+	font-family: var(--font-muli);
+	font-size: var(--size-h2);
+	font-weight: 400;
+	line-height: var(--lh-h2);
+}
+
+h3 {
+	font-family: var(--font-khula);
+	font-size: var(--size-h3);
+	font-weight: 400;
+	line-height: var(--lh-h3);
+}
+
+p,
+a,
+li {
+	font-family: var(--font-khula);
+	font-size: var(--size-text);
+	font-weight: 400;
+	line-height: var(--lh-p);
+}
+
+footer p,
+footer a,
+footer li,
+.text-footer,
+.text-cases {
+	font-size: var(--size-footer);
+	line-height: var(--lh-footer);
+}
+
+p.caption,
+a.caption,
+li.caption {
+	font-size: var(--size-caption);
+	line-height: var(--lh-caption);
+}
+
+.modal-text {
+	font-size: var(--size-footer);
+	line-height: var(--lh-footer);
+}
+
+.white-text {
+	color: var(--color-1);
+}
+.gray-text {
+	color: var(--color-3);
+}
+
+.divider-main {
+	max-width: 650px;
+	border: 3px solid var(--color-divider-main);
+}
+
+.divider-content {
+	max-width: 670px;
+	border: 2px solid var(--color-divider-content);
+}
+
+section {
+	position: relative;
+	overflow: hidden;
+}
+
+.section-space {
+	padding: var(--vertical-section-padding) 0;
+	display: block;
+}
+
+button, .link_btn {
+	text-decoration: none;
+	cursor: pointer;;
+	border: 2px solid var(--color-border);
+	border-radius: 20px;
+	color: var(--color-2);
+	background-color: var(--color-button);
+	transition: all 0.1s ease-in-out;
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+}
+
+footer button {
+	border-radius: 10px;
+	color: var(--color-1);
+	background-color: var(--color-button-footer);
+}
+
+button:hover, .link_btn:hover {
+	background-color: var(--color-button-hover);
+	color: var(--color-1);
+	box-shadow: -1px 7px 10px -4px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: -1px 7px 10px -4px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -1px 7px 10px -4px rgba(0, 0, 0, 0.75);
+}
+
+.color-error {
+	color: var(--color-error);
+}
+
+.background-color-white {
+	background-color: var(--color-background-review);
+}
+
+/* Media */
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+	:root {
+		--size-h1: 54px;
+		--lh-h1: 76px;
+
+		--size-h2: 38px;
+		--lh-h2: 63px;
+
+		--size-h3: 24px;
+		--lh-h3: 38px;
+	}
+}
+
+@media (max-width: 992px) {
+	:root {
+		--size-text: 18px;
+		--size-h1: 50px;
+		--lh-h1: 68px;
+
+		--size-h2: 34px;
+
+		--size-h3: 24px;
+	}
+}
+
+@media (max-width: 768px) {
+	:root {
+		--size-h1: 46px;
+		--lh-h1: 62px;
+
+		--size-h2: 30px;
+
+		--size-h3: 20px;
+		--lh-h3: 34px;
+	}
+}
+
+@media (max-width: 576px) {
+	:root {
+		--size-h1: 40px;
+		--lh-h1: 56px;
+
+		--size-h2: 24px;
+		--lh-h2: 37px;
+
+		--size-h3: 20px;
+		--lh-h3: 32px;
+
+		--size-text: 16px;
+		--lh-p: 26px;
+
+		--size-footer: 14px;
+	}
+}
+
+@media (max-width: 450px) {
+	:root {
+		--lh-p: 26px;
+	}
+}
+
+@media (max-width: 357px) {
+	:root {
+		--lh-caption: 16px;
+	}
+}
+
+@media (max-width: 298px) {
+}
