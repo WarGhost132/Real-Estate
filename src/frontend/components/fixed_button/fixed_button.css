@@ -1,0 +1,55 @@
+:root {
+	--fixed-button-width: 100px;
+	--fixed-button-image-width: 80%;
+	--fixed-button-right: 50px;
+	--fixed-button-bottom: 10px;
+}
+
+.fixed_button__wrapper {
+	position: fixed;
+
+	bottom: var(--fixed-button-bottom);
+	right: var(--fixed-button-right);
+
+	width: var(--fixed-button-width);
+	height: var(--fixed-button-width);
+
+	background-color: var(--color-button-fixed);
+  
+	z-index: 2000;
+	border-radius: 50%;
+}
+
+
+.fixed_button__wrapper img {
+	width: var(--fixed-button-image-width);
+    height: auto;
+}
+
+@media (max-width: 992px) {
+	:root{
+		--fixed-button-right: 40px;
+		--fixed-button-bottom: 13px;
+		--fixed-button-image-width: 83%;
+		--fixed-button-width: 90px;
+	}
+}
+
+@media (max-width: 768px) {
+	:root{
+		--fixed-button-right: 30px;
+		--fixed-button-bottom: 16px;
+		--fixed-button-image-width: 86%;
+		--fixed-button-width: 80px;
+	}
+}
+
+@media (max-width: 576px) {
+	:root{
+		--fixed-button-right: 20px;
+		--fixed-button-bottom: 20px;
+		--fixed-button-image-width: 90%;
+		--fixed-button-width: 70px;
+	}
+
+}
